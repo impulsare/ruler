@@ -1,0 +1,9 @@
+type: object
+properties:
+    ruler:
+        type: object
+        required: [queue]
+        properties:
+            queue:
+                type: string
+required: [ruler]

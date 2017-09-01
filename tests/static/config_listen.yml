@@ -1,0 +1,9 @@
+logger:
+    level: DEBUG
+    directory: /tmp
+    handlers:
+        file: true
+        console: false
+distributer:
+    host: 192.168.108.2
+    queue: ruler

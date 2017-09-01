@@ -1,0 +1,6 @@
+impulsare-config
+impulsare-logger
+impulsare-distributer
+
+# TO BE PUT LATER FROM PYPI
+# -e git+ssh://gogs@gogs.lagooda.com:21522/impulsare/writer.git#egg=impulsare_writer
