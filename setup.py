@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.1a2'
+__version__ = '0.1a3'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -15,19 +15,19 @@ with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
     all_reqs = f.read().split('\n')
 
 install_requires = [x.strip() for x in all_reqs if 'git+' not in x]
-dependency_links = [x.strip().replace('git+', '') for x in all_reqs if x.startswith('git+')]
+dependency_links = [x.strip().replace('git+', '')
+                    for x in all_reqs if x.startswith('git+')]
 
 setup(
     name='impulsare-ruler',
     version=__version__,
-    description="""Reads records from a queue (put there by ``reader``) and process records
-to another (``writer``). It's a middleware that transforms / validate / generate data.""",
+    description="""Reads records from a queue (put there by reader) and process records
+to another (writer). It's a middleware that transforms / validate / generate data.""",
     long_description=long_description,
     url='https://github.com/impulsare/ruler',
     download_url='https://github.com/impulsare/ruler/tarball/' + __version__,
     license='AGPLv3',
     classifiers=[
-        # 'Development Status :: 1 - Planning',
         'Development Status :: 2 - Pre-Alpha',
         # 'Development Status :: 3 - Alpha',
         # 'Development Status :: 4 - Beta',
