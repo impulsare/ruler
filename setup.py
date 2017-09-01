@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.1a3'
+__version__ = '0.1a4'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -28,8 +28,8 @@ to another (writer). It's a middleware that transforms / validate / generate dat
     download_url='https://github.com/impulsare/ruler/tarball/' + __version__,
     license='AGPLv3',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        # 'Development Status :: 3 - Alpha',
+        # 'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         # 'Development Status :: 4 - Beta',
         # 'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
